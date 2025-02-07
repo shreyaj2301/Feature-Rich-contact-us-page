@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- AOS Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  </head>
+
+  <body
+    class="bg-light"
+    data-bs-spy="scroll"
+    data-bs-target=".navbar"
+    data-bs-offset="50"
+  >
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Contact Us</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faqs">FAQs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Main Container -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <!-- Contact Form -->
+          <h2 class="text-primary">Get in Touch</h2>
+          <form id="contactForm" class="contact-form bg-white p-4 rounded">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              Send Message
+            </button>
+          </form>
+        </div>
+        <div class="col-md-6 mb-3">
+          <!-- Google Map -->
+          <h2 class="text-primary">Our Location</h2>
+          <div class="google-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14090.689415648034!2d77.59461003405141!3d12.971598854367055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1475000aef0d%3A0x760b7f8b5e6c21e!2sBengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1634265634575!5m2!1sen!2sus"
+              width="100%"
+              height="365"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action Buttons -->
+      <div class="call-to-action text-center mt-4">
+        <a id="whatsapp-link" href="#" class="btn btn-primary mx-2"
+          >Call Us Now <i class="fab fa-whatsapp"></i
+        ></a>
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=5th+Floor,+North+Square,+135,+Infantry+Road,+Bengaluru,+Karnataka+560001"
+          class="btn btn-secondary mx-2"
+          target="_blank"
+          >Locate Us</a
+        >
+      </div>
+
+      <!-- Address Section -->
+      <div class="address-section bg-light p-4 rounded mt-5">
+        <h4 class="text-primary">Our Address</h4>
+        <p>
+          <i class="fas fa-map-marker-alt" style="font-size: medium"></i> 123
+          Example Street, City, Country
+        </p>
+        <p>
+          <i class="fas fa-phone" style="font-size: medium"></i> +1 234 567 890
+        </p>
+        <p>
+          <i class="fas fa-envelope" style="font-size: medium"></i>
+          info@example.com
+        </p>
+      </div>
+
+      <!-- FAQs Section -->
+      <div class="faqs mt-5" id="faqs">
+        <h4 class="text-primary">Frequently Asked Questions</h4>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                What is the warranty period for your products?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                The warranty period for our products is 1 year from the date of
+                purchase.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                How do I connect my device?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                You can connect your device via Bluetooth or using the provided
+                audio cable.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Where can I find the user manual?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                The user manual can be downloaded from our official website.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="py-4 text-center text-white"
+      style="background-color: #343a40"
+    >
+      <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+      <div>
+        <a href="https://facebook.com" class="text-white mx-2" target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com" class="text-white mx-2" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://instagram.com" class="text-white mx-2" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://linkedin.com" class="text-white mx-2" target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
